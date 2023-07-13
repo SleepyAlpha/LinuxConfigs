@@ -1,0 +1,14 @@
+#!/bin/sh
+
+sudo sh -c "echo 's 0 700' > /sys/devices/pci0000:00/0000:00:03.1/0000:26:00.0/0000:27:00.0/0000:28:00.0/pp_od_clk_voltage"
+
+sudo sh -c "echo 's 1 2650' > /sys/devices/pci0000:00/0000:00:03.1/0000:26:00.0/0000:27:00.0/0000:28:00.0/pp_od_clk_voltage"
+
+sudo sh -c "echo 'vo -50' > /sys/devices/pci0000:00/0000:00:03.1/0000:26:00.0/0000:27:00.0/0000:28:00.0/pp_od_clk_voltage"
+
+sudo sh -c "echo 'm 1 950' > /sys/devices/pci0000:00/0000:00:03.1/0000:26:00.0/0000:27:00.0/0000:28:00.0/pp_od_clk_voltage"
+
+sudo sh -c "echo '120000000' > /sys/class/drm/card0/device/hwmon/hwmon1/power1_cap"
+
+sudo sh -c "echo 'c' > /sys/devices/pci0000:00/0000:00:03.1/0000:26:00.0/0000:27:00.0/0000:28:00.0/pp_od_clk_voltage"
+
